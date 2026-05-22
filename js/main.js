@@ -4,6 +4,8 @@
 import { layout } from './paper.js';
 import { state }  from './state.js';
 
+import './pdf.js';
+
 // keyboard.js and archive.js self-register their event listeners on import
 import './keyboard.js';
 import './archive.js';

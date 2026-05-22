@@ -309,3 +309,52 @@ html, body {
   0%  { transform:scale(0); opacity:0.85; }
   100%{ transform:scale(3); opacity:0; }
 }
+
+#mute-btn {
+  position: fixed;
+  bottom: 28px;
+  left: 26px;
+  font-family: 'Special Elite', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.25);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+#mute-btn:hover { color: rgba(0, 0, 0, 0.55); }
+#mute-btn.muted { color: rgba(0, 0, 0, 0.12); }
+
+#save-pdf-btn {
+  position: fixed;
+  top: 58px;
+  left: 26px;
+  font-family: 'Special Elite', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.22);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  padding: 0;
+  transition: color 0.2s;
+}
+#save-pdf-btn:hover { color: rgba(0, 0, 0, 0.55); }
+
+#author {
+  position: fixed;
+  bottom: 28px;
+  right: 26px;
+  font-family: 'DinoAlive', cursive;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.18);
+  letter-spacing: 0.08em;
+  z-index: 20;
+  pointer-events: none;
+}

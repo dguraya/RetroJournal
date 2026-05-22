@@ -1,3 +1,5 @@
+import { playClick, playReturn, playDing, playBackspace, isMuted } from './sound.js';
+
 // ── KEYBOARD + READ MODE ───────────────────────────────────────────────────
 
 import { state, CONSTANTS } from './state.js';
@@ -144,6 +146,7 @@ function doBackspace() {
 
 // ── DING ──────────────────────────────────────────────────────────────────
 function triggerDing() {
+  if (!isMuted()) playDing();
   dingEl.classList.add('on');
   clearTimeout(dingEl._t);
   dingEl._t = setTimeout(() => dingEl.classList.remove('on'), 950);
@@ -199,15 +202,16 @@ document.addEventListener('keydown', e => {
 
   if (e.key === 'Backspace') {
     doBackspace();
+    if (!isMuted()) playBackspace();
     pressKey('del');
     updateStats();
     return;
   }
 
   let ch = null, isNL = false;
-  if (e.key === 'Enter')        { ch = '\n'; isNL = true; pressKey('return'); }
-  else if (e.key === ' ')       { ch = ' '; }
-  else if (e.key.length === 1)  { ch = e.key; pressKey(e.key); }
+  if (e.key === 'Enter')        { ch = '\n'; isNL = true; if (!isMuted()) playReturn(); pressKey('return'); }
+  else if (e.key === ' ')       { ch = ' ';  if (!isMuted()) playClick(); }
+  else if (e.key.length === 1)  { ch = e.key; if (!isMuted()) playClick(); pressKey(e.key); }
   else return;
 
   state.text += ch;
