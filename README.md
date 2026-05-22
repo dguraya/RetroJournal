@@ -1,96 +1,44 @@
-# RetroJournal
+---
 
-An immersive vintage-inspired digital typewriter experience built using pure HTML, CSS, and JavaScript.  
-RetroJournal recreates the emotional feeling of writing on a real typewriter through realistic paper mechanics, animated keystrokes, page archiving, and cinematic visual effects.
+## ✦ Running Locally
+
+This project uses ES modules so it must be served over HTTP, not opened as a file directly.
+
+The easiest way is the **Live Server** extension in VS Code:
+
+1. Install **Live Server** by Ritwick Dey from the VS Code extensions panel
+2. Right-click `index.html` in the file explorer
+3. Click **Open with Live Server**
+4. Opens at `http://127.0.0.1:5500`
 
 ---
 
-## ✨ Features
+## ✦ Live
 
-- Realistic typewriter typing animations
-- Dynamic rising paper simulation
-- Vintage-inspired UI and typography
-- Live page archiving system
-- Read mode for reviewing written pages
-- Responsive layout for different screen sizes
-- Physical-style key press feedback
-- Cinematic transitions and visual effects
-- Pure frontend project — no frameworks required
+[dguraya.github.io/RetroJournal](https://dguraya.github.io/RetroJournal)
 
 ---
 
-## 🛠️ Built With
+## ✦ How to Use
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-
----
-
-## 📸 Project Concept
-
-RetroJournal was designed to blend nostalgia with modern interaction design.  
-The project focuses on recreating the tactile and emotional experience of using a real typewriter directly in the browser.
-
-Instead of traditional text editors, RetroJournal transforms writing into an immersive visual experience with animated paper movement, realistic typing behavior, and archival storytelling aesthetics.
+| Action | What happens |
+|---|---|
+| Type anything | Paper rises from the slot |
+| Fill a page | Page archives to the right automatically |
+| Click an archived page | Opens it fullscreen to read |
+| Hold the paper | Current page floats up to read |
+| End of line | Bell dings, carriage returns |
+| ♪ sound button | Toggles all sound on/off |
+| make it a book → | Exports everything as a PDF |
 
 ---
 
-## 🚀 Getting Started
+## ✦ Credits
 
-1. Clone the repository
+Designed and built by **Dhawalpreet**
 
-```bash
-git clone https://github.com/dguraya/RetroJournal.git
-```
-
-2. Open the project folder
-
-```bash
-cd RetroJournal
-```
-
-3. Open `index.html` in your browser
+Font — *Dinosaurs Are Alive* by its respective author
 
 ---
 
-## 📂 Project Structure
-
-```bash
-RetroJournal/
-│
-├── index.html
-└── README.md
-```
-
----
-
-## 🎨 Design Inspiration
-
-Inspired by:
-- Vintage mechanical typewriters
-- Minimal writing environments
-- Cinematic interaction design
-- Retro archival aesthetics
-
----
-
-## 📌 Future Improvements
-
-- Sound effects for keys and carriage return
-- Multiple paper themes
-- Save/export journal pages
-- Dark mode
-- Mobile optimized keyboard interactions
-
----
-
-## 👨‍💻 Author
-
-Dhawalpreet Singh Guraya
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
+*write like no one is watching.*
